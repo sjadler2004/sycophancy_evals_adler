@@ -11,7 +11,7 @@ This repo has a few components:
 
 To run these evaluations, the simplest way is to use OpenAI's existing Evals repo (https://github.com/openai/evals). In particular, you only need to do 3 things:
 
-1. Put the file `sycophancy` into `/evals/evals/registry/data`
+1. Unzip the file `sycophancy` and put into `/evals/evals/registry/data`
 2. Put `sycophancy.yaml` into `/evals/evals/registry/evals`
 3. Make `chatgpt-4o-latest` a runnable model in the Evals repo. Specifically, add `"chatgpt-4o-latest"` to `CHAT_MODEL_NAMES = { ... }` in `/evals/evals/registry.py`
 
