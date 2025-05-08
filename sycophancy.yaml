@@ -1,0 +1,156 @@
+sycophancy:
+  id: sycoyphancy.nlp_survey.small.10
+  description: Tests sycophancy (more to come)
+  metrics: [accuracy]
+
+sycoyphancy.nlp_survey.small.10:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample10_nlp_survey.jsonl
+
+sycoyphancy.philpapers2020.small.10:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample10_philpapers.jsonl
+
+sycoyphancy.political_typology_quiz.small.10:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample10_political_typology_quiz.jsonl
+
+sycoyphancy.nlp_survey.medium.200:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample200_nlp_survey.jsonl
+
+sycoyphancy.philpapers2020.medium.200:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample200_philpapers.jsonl
+
+sycoyphancy.political_typology_quiz.medium.200:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample200_political_typology_quiz.jsonl
+
+sycoyphancy.nlp_survey.complete:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/transformed_data/transformed_sycophancy_on_nlp_survey.jsonl
+
+sycoyphancy.philpapers2020.complete:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/transformed_data/transformed_sycophancy_on_philpapers2020.jsonl
+
+sycoyphancy.political_typology_quiz.complete:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/transformed_data/transformed_sycophancy_on_political_typology_quiz.jsonl
+
+sycoyphancy.political_typology_quiz.medium.200.avoid_duplicates:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample200_political_typology_quiz_avoid_duplicate_answer.jsonl
+
+
+sycoyphancy.political_typology_quiz.medium.200.avoid_duplicates_new_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample200_political_typology_quiz_avoid_duplicate_answer_new_system_prompt.jsonl
+
+sycoyphancy.nlp_survey.medium.200.avoid_duplicates:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample200_nlp_survey_avoid_duplicate_answer.jsonl
+
+sycoyphancy.nlp_survey.medium.200.avoid_duplicates_new_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/downsampled_transformed_data/sample200_nlp_survey_avoid_duplicate_answer_new_system_prompt.jsonl
+
+sycoyphancy.gibberish.200:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_gibberish.jsonl
+
+sycoyphancy.gibberish.200.inverted:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_gibberish_inverted.jsonl
+
+sycoyphancy.gibberish.200.new_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_gibberish_new_system_prompt.jsonl
+
+sycoyphancy.gibberish.200.decline_preference:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_gibberish_decline_preference.jsonl
+
+sycoyphancy.gibberish.200.no_stated_preference:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_gibberish_no_stated_preference.jsonl
+
+sycoyphancy.random_numbers.200:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers.jsonl
+
+sycoyphancy.random_numbers.200.new_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_new_system_prompt.jsonl
+
+sycoyphancy.random_colors.200.new_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_colors_new_system_prompt.jsonl
+
+sycoyphancy.random_numbers.200.new_system_prompt.permit_explanation:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_new_system_prompt_permit_explanation.jsonl
+
+sycoyphancy.random_numbers.200.no_stated_preference:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_no_stated_preference.jsonl
+
+sycoyphancy.random_numbers.200.deferential_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_deferential_system_prompt.jsonl
+
+sycoyphancy.random_numbers.200.extremely_deferential_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_extremely_deferential_system_prompt.jsonl
+
+sycoyphancy.random_numbers.200.pizza_deferential_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_pizza_deferential_system_prompt.jsonl
+
+sycoyphancy.random_numbers.200.pizza_agree_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_pizza_agree_system_prompt.jsonl
+
+sycoyphancy.random_numbers.200.random_pizza_agree_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_random_pizza_agree_system_prompt.jsonl
+
+sycoyphancy.random_numbers.200.random_pizza_deferential_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_random_pizza_deferential_system_prompt.jsonl
+
+sycoyphancy.random_numbers.200.deferential_noncontrarian_system_prompt:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: sycophancy/new_data/200_random_numbers_deferential_noncontrarian_system_prompt.jsonl
+
