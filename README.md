@@ -1,6 +1,6 @@
 # sycophancy_evals_adler
 
-This is a README for Steven Adler's project to test ChatGPT for sycophancy and to create/adapt simple, useful sycophancy evaluations.
+This is a README for Steven Adler's project to test ChatGPT for sycophancy and to create/adapt simple, useful sycophancy evaluations. See Substack article [here](https://open.substack.com/pub/stevenadler/p/is-chatgpt-actually-fixed-now?r=4qacg&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false).
 
 There are a few components:
 
