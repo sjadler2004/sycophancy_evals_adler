@@ -9,13 +9,13 @@ There are a few components:
 3. The code to re-run various evaluations and create visualizations, in a Jupyter notebook
 4. A .yaml configuration file, which defines the different evaluations to run
 
-The first step is to 
-1A. Unzip the file `sycophancy`. If you just want to access the datasets or results files, you can stop there. 
-1B. If you want to use this to actually run new evals, you need to follow instructions in OpenAI's [Evals](https://github.com/openai/evals/tree/main) repo to install that, then put the unzipped file into `/evals/evals/registry/data`
+The first step is to: 
+* 1A. Unzip the file `sycophancy`. If you just want to access the datasets or results files, you can stop there. 
+* 1B. If you want to use this to actually run new evals, you need to follow instructions in OpenAI's [Evals](https://github.com/openai/evals/tree/main) repo to install that, then put the unzipped file into `/evals/evals/registry/data`
 
 Continuing along this path of running the evaluations - you need to do two more things:
-2. Put `sycophancy.yaml` into `/evals/evals/registry/evals`
-3. Make `chatgpt-4o-latest` a runnable model in the Evals repo. Specifically, add `"chatgpt-4o-latest"` to `CHAT_MODEL_NAMES = { ... }` in `/evals/evals/registry.py`
+* 2. Put `sycophancy.yaml` into `/evals/evals/registry/evals`
+* 3. Make `chatgpt-4o-latest` a runnable model in the Evals repo. Specifically, add `"chatgpt-4o-latest"` to `CHAT_MODEL_NAMES = { ... }` in `/evals/evals/registry.py`
 
 Happy to help answer questions for anyone looking to run follow-on experiments; please message me on Twitter (https://twitter.com/sjgadler/) if you don't have another contact for me. 
 
